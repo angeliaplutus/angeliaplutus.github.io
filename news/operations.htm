@@ -1,0 +1,1664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- InstanceBegin template="/Templates/angelia.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+
+<TITLE>Satellite Broadband Internet Consulting & Related Modem IP Cores Design </TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+
+<!- English Meta //-->
+<meta name="abstract" content="Satellite Broadband Internet Modem IP Cores">
+<meta content="author" name="markchen@xmail.net">
+<meta name="keywords" content="Satellite, Broadband, Internet, Modem,Modulation, Demodulation, IC, IP core">
+<meta name="description" content="Angelia designs satellite broadband Internet modem IP cores and provides technical and business consulting">
+
+
+<link rel="stylesheet" href="../yyy_scripts/myscript/myscript_en.css" type="text/css">
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>  
+
+
+
+
+<link href="../yyy_scripts/dropdownmenu_lwis/css/helper.css" media="screen" rel="stylesheet" type="text/css" />
+
+<!-- Beginning of compulsory code below -->
+
+<link href="../yyy_scripts/dropdownmenu_lwis/css/dropdown.linear.columnar.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../yyy_scripts/dropdownmenu_lwis/css/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.lwis-celebrity table tr td {
+	font-size: 14px;
+}
+.lwis-celebrity table tr td strong {
+	color: #408080;
+}
+body,td,th {
+	font-size: 16px;
+	color: #697696;
+}
+#headtitle {
+	color: #3474CB;
+	font-size: 24px;
+}
+</style>
+
+<!-- / END -->
+
+
+
+</head>
+<body>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+  
+  
+    <td width="94"><img src="../yyy_scripts/dropdownmenu_lwis/images/logo_lwis.png" alt="LWIS.net" />
+    <td width="244"><strong>Angelia </strong></td>
+    <td width="10">&nbsp;</td>
+    <td width="657" align="right"><strong id="headtitle"> Expert of Satellite Broadband Technologies </strong></td>
+
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">&nbsp;</td>
+  </tr>
+  
+  
+</table>
+<!-- Beginning of compulsory code below -->
+
+<ul class="dropdown dropdown-linear dropdown-columnar" id="nav" name="nav">
+
+	<li><a href="../index.html">Home</a></li>     
+    
+  <li class="dir"><a href='../knowledge/000knowledge.htm'><span>Knowledge</span></a>
+		<ul>
+			<li class="dir"><a href='../knowledge/satnet.htm'><span>Satellite Broadband</span></a>
+				<ul>
+					<li><a href="../knowledge/satnet/broadband.htm" target="_blank">SATELLITE BROADBAND INTERNET </a></li>
+        <li><a href="../knowledge/satnet/twoway.htm" target="_blank">TWO WAY SATELLITE</a></li>
+        <li><a href="../knowledge/satnet/howto.htm" target="_blank">How to Choose the Best Amongst Satellite Broadband Internet Providers</a></li>
+        <li><a href="../knowledge/satnet/qa.htm" target="_blank">Q&amp;A About Satellite Broadband Internet</a></li>
+				</ul>
+			</li>
+            
+            
+			<li class="dir"><a href='../knowledge/outdoorunits.htm'><span>Outdoor Units</span></a>
+				<ul>
+					
+        <li>
+          <a href="../knowledge/outdoorunits/tria.htm" target="_blank">Transmit and Receive Integrated Assembly (TRIA) </a>
+        </li>
+        <li>
+          <a href="../knowledge/outdoorunits/frequencyconverters.htm" target="_blank">SATELLITE FREQUENCY CONVERTERS </a>
+          
+            <li>
+              <a href="../knowledge/outdoorunits/downconverter.htm" target="_blank">SATELLITE DOWNCONVERTER </a>
+            </li>
+            <li>
+              <a href="../knowledge/outdoorunits/upconverter.htm" target="_blank">SATELLITE UPCONVERTER </a>
+            </li>
+          
+        
+        <li>
+          <a href="../knowledge/outdoorunits/orthomode_transducer.htm" target="_blank">ORTHOMODE TRANSDUCER (OMT) </a>
+        </li>
+        <li>
+          <a href="../knowledge/outdoorunits/feedhorns.htm" target="_blank">FEED HORN </a>
+        </li>
+				</ul>
+			
+			<li class="dir"><a href='../knowledge/antennas.htm'><span>Antennas</span></a>
+				<ul>
+					<li>
+        <a href="../knowledge/antennas/transmitreceiveantenna.htm" target="_blank">TRANSMIT-RECEIVE ANTENNA </a>
+      </li>
+      <li>
+        <a href="../knowledge/antennas/antenna_components.htm" target="_blank">ANTENNA COMPONENTS </a>
+      </li>
+				</ul>
+			</li>
+            
+			<li class="dir"><a href='../knowledge/terminals.htm'><span>Terminals</span></a>
+				<ul>
+					<li><a href="./"></a></li>
+				</ul>
+			</li>
+            
+            
+			<li class="dir"><a href='../knowledge/indoorunits.htm'><span>Indoor Units</span></a>
+				<ul>
+					<li><a href="./"></a></li>
+				</ul>
+			</li>
+            
+			<li class="dir"><a href='../knowledge/modemschips.htm'><span>Modems</span></a>
+				<ul>
+                
+					<li><a href="../knowledge/modemschips/modem_structure_layout.htm" target="_blank"> Modem Internal Structure &amp; Circuits</a></li>
+					<li><a href="../knowledge/modemschips/modems_pics.htm" target="_blank">Modems Pictures - Typical </a></li>
+					<li><a href="../knowledge/modemschips/baseband_processing.htm" target="_blank">Baseband Processing</a></li>
+                    
+					<li><a href="../knowledge/modemschips/clocking_timing.htm" target="_blank">Clocking / Timing</a></li>
+					<li><a href="../knowledge/modemschips/coding_modulation.htm" target="_blank">Coding &amp; Modulation </a></li>
+					<li><a href="../knowledge/modemschips/demapper.htm" target="_blank">Demapper</a></li>
+					<li><a href="../knowledge/modemschips/demodulator.htm" target="_blank">Demodulator</a></li>
+					<li><a href="../knowledge/modemschips/forward_channel.htm" target="_blank">Forward Channel</a></li>
+					<li><a href="../knowledge/modemschips/lband_ifpcb.htm" target="_blank">L-Band/IF Printed Circuit Card</a></li>
+                    
+					<li><a href="../knowledge/modemschips/loopback.htm" target="_blank">Loopback Features</a></li>
+					<li><a href="../knowledge/modemschips/miscellaneous.htm" target="_blank">Miscellaneous Subjects </a></li>
+					<li><a href="../knowledge/modemschips/modulator.htm" target="_blank">Modulator</a></li>
+					<li><a href="../knowledge/modemschips/multiplexer_demultiplexer.htm" target="_blank">Multiplexer / Demultiplexer</a></li>
+					<li><a href="../knowledge/modemschips/networktype.htm" target="_blank">Network Type</a></li>
+					<li><a href="../knowledge/modemschips/return_channel.htm" target="_blank">Return Channel </a></li>
+					<li><a href="../knowledge/modemschips/scrambling.htm" target="_blank">Scrambling</a></li>
+                    
+					<li><a href="../knowledge/modemschips/special_technologies.htm" target="_blank">Special Technologies </a></li>
+					<li><a href="../knowledge/modemschips/tuner.htm" target="_blank">Tuner</a></li>
+                    
+                    
+				</ul>
+			</li>
+            
+            
+            
+            
+		</ul>
+  </li>
+    
+    
+    
+	<li class="dir"><a href='../research_design/research_design.htm'><span>R & D </span></a>
+		<ul>
+        
+            
+            <li class="dir"><a href='../research_design/research.htm'><span>Research</span></a>
+				<ul>
+					<li><a href="../research_design/research/literature.htm" target="_blank">Literature of Modem Research </a></li>
+        <li><a href="../research_design/research/positions.htm" target="_blank">PhD and Research Positions for Satellite Modems </a></li>
+        
+        <li><a href="../research_design/research/projects.htm" target="_blank">Current Research Projects </a></li>
+				</ul>
+			</li>         
+            
+            
+            <li class="dir"><a href='../research_design/design.htm'><span>Design</span></a>
+				<ul>
+        <li><a href="../research_design/design/literature.htm" target="_blank">Literature in Wireless/Satellie Communications / Modem Design </a></li>
+        
+					<li><a href="../research_design/design/jobs.htm" target="_blank">Modem Design Jobs  </a></li>
+                    <li><a href="../research_design/design/projects.htm" target="_blank">Current Design Projects  </a></li>
+				</ul>
+			</li>
+            
+            
+        
+        
+		</ul>
+	</li>
+    
+    
+    
+    
+	<li class="dir"><a href='../products/000products.htm'><span>Products</span></a>
+		<ul>      
+        
+            <li><a href='../products/terminals.htm'><span>Satellite Terminals</span></a>
+			</li>
+			<li><a href='../products/indoorunits.htm'><span>Indoor Units</span></a>
+			</li>
+			<li><a href='../products/modems.htm'><span>Modems</span></a>
+			</li>
+			<li><a href='../products/modulators.htm'><span>Modulators</span></a>
+        
+			</li>
+			<li><a href='../products/demodulators.htm'><span>Demodulators</span></a>
+			</li>
+			<li><a href='../products/others.htm'><span>Others</span></a>
+        
+        
+		</ul>
+	</li>
+    
+    
+    
+    
+    
+    
+	<li class="dir"><a href='../operators/operators.htm'><span>Operators</span></a>
+		<ul>
+                
+        
+            <li><a href='../operators/tier1.htm'><span>Tier 1</span></a>
+			</li>
+			<li><a href='../operators/tier2.htm'><span>Tier 2</span></a>
+			</li>
+			<li><a href='../operators/tier3.htm'><span>Tier 3</span></a>
+			</li>
+			<li><a href='../operators/china.htm'><span>China</span></a>
+        
+        
+		</ul>
+	</li>
+    
+    
+    
+    
+<!-- Beginning of compulsory code below-->
+    
+    
+	<li class="dir"><a href='news.htm'><span>News</span></a>
+		<ul>
+        
+        
+            <li><a href='operations.htm'><span>Operations of the Satellite Broadband Internet</span></a>
+			</li>
+			<li><a href='tech.htm'><span>Technology of the Satellite Broadband Internet</span></a>
+			</li>
+			<li><a href='general.htm'><span>General Info of the Satellite Broadband Internet</span></a>
+			</li>
+			<li><a href='china.htm'><span>China's Satellite Broadband Internet</span></a>
+			</li>
+			<li><a href='company_news.htm'><span>Angelia News</span></a>
+        
+		</ul>
+	</li>
+    
+    <!-- --> 
+    
+    
+    
+	<li class="dir"><a href='../expertise/expertise.htm'><span>Expertise</span></a>
+		<ul>
+            <li><a href='../expertise/consulting.htm'><span>Satellite Broadband Internet Consulting and Technical Services</span></a>
+			</li>
+			<li><a href='../expertise/modemipcores.htm'><span>Design of Modulator, Demodulator & Modem ICs</span></a>
+			</li>
+            
+            <!--
+			<li><a href='../expertise/icdesign.htm'><span>IC design</a>
+			</li>
+			<li><a href='../expertise/reports.htm'><span>China satellite broadband monthly report</a>
+			</li>
+			<li><a href='../expertise/china_marketing.htm'><span>China Marketing</span></a>
+            -->
+            
+            </li>
+			<li><a href='../expertise/contact.htm'><span>Contact</span></a>
+			</li>
+			<li><a href='../expertise/founder.htm'><span>The founder</a>
+			</li>
+            
+		</ul>
+	</li>
+    
+    
+    
+    
+    
+    
+	<li><a href='../expertise/contact.htm'>Contact</a></li>
+    
+    
+    
+    
+</ul>
+
+<p>
+  <!-- / END -->
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="900" align="center">
+  
+  <tr>
+          <td width="900" height="16" align="center" valign="top"><!-- InstanceBeginEditable name="modules" -->
+<table width="100%" border="0">
+  <tr>
+    <td><h2 align="center" class="STYLE1" style="color: #333366">News of the Satellite Broadband  Internet (Modem) Industry </h2></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <h2>Operations of   the Satellite Broadband Internet</h2>
+    </div></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="operations.png" width="225" height="225" alt="operations" /></td>
+  </tr>
+  <tr>
+    <td><h2 align="center" style="color: #990000">2020</h2></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>March, 2020</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Viasat and Visiontec expand satellite internet partnership in Brazil</h3></td>
+  </tr>
+  <tr>
+    <td>31 March 2020</td>
+  </tr>
+  <tr>
+    <td>https://www.telecompaper.com/news/viasat-and-visiontec-expand-satellite-internet-partnership-in-brazil--1332711</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Satellite internet startup OneWeb declares bankruptcy to look for a buyer</h3></td>
+  </tr>
+  <tr>
+    <td>03.28.2020 </td>
+  </tr>
+  <tr>
+    <td>https://www.engadget.com/2020-03-28-oneweb-declares-bankruptcy.html</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb joins the satellite Internet gold rush this week</h3></td>
+  </tr>
+  <tr>
+    <td>2/3/2020</td>
+  </tr>
+  <tr>
+    <td>https://arstechnica.com/science/2020/02/oneweb-joins-the-satellite-internet-gold-rush-this-week/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>February, 2020</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Exclusive: Space Internet startup Astranis raises $90 million</h3></td>
+  </tr>
+  <tr>
+    <td>February 13, 2020</td>
+  </tr>
+  <tr>
+    <td>https://fortune.com/2020/02/13/space-internet-astranis-fundraising/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>January, 2020</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Mexico to launch satellite internet tender this year </h3></td>
+  </tr>
+  <tr>
+    <td>Friday 31 January 2020 </td>
+  </tr>
+  <tr>
+    <td>https://www.telecompaper.com/news/mexico-to-launch-satellite-internet-tender-this-year--1324879</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>SpaceX Launches Fourth Batch of Starlink Internet Satellites     </h3></td>
+  </tr>
+  <tr>
+    <td>January 30, 2020</td>
+  </tr>
+  <tr>
+    <td>https://www.extremetech.com/extreme/305565-spacex-launches-fourth-batch-of-starlink-internet-satellites</td>
+  </tr>
+  <tr>
+    <td>https://techcrunch.com/2020/01/29/spacex-successfully-launches-60-more-satellites-for-its-starlink-satellite-internet-constellation/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Backed by $116M, Skylo exits stealth with a satellite internet network for IoT devices </h3></td>
+  </tr>
+  <tr>
+    <td>JANUARY 21 2020</td>
+  </tr>
+  <tr>
+    <td>https://siliconangle.com/2020/01/21/backed-116m-skylo-exits-stealth-satellite-internet-network-iot-devices/</td>
+  </tr>
+  <tr>
+    <td>https://www.bloomberg.com/news/articles/2020-01-21/stealth-startup-nabs-133-million-for-instant-internet-antennas</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h2 align="center" style="color: #990000">2019</h2></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>December, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Apple is reportedly developing satellite technology to beam internet data to users' devices</h3></td>
+  </tr>
+  <tr>
+    <td> 24 December 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.computing.co.uk/ctg/news/3084819/apple-is-reportedly-developing-satellite-technology-to-beam-internet-data-to-users-devices</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Apple eyes satellite internet for data project </h3></td>
+  </tr>
+  <tr>
+    <td>December 23, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.zdnet.com/article/apple-eyes-satellite-internet-for-data-project/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Apple is reportedly entering the satellite business, taking on SpaceX and Amazon</h3></td>
+  </tr>
+  <tr>
+    <td>Dec 20 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.cnbc.com/2019/12/20/apple-is-entering-the-satellite-business-report-says.html</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>SpaceX seeks to block Amazon’s Project Kuiper satellite broadband program from skipping a regulatory hurdle </h3></td>
+  </tr>
+  <tr>
+    <td> December 20, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.geekwire.com/2019/spacex-seeks-block-amazons-project-kuiper-satellite-broadband-program-skipping-regulatory-hurdle/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>SpaceX Is Lobbying Against Amazon’s Internet-Beaming Satellites</h3></td>
+  </tr>
+  <tr>
+    <td> Dec 19 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.vice.com/en_us/article/5dmzyx/spacex-is-lobbying-against-amazons-internet-beaming-satellites</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Satellite to boost internet in PH, Asia-Pacific launched </h3></td>
+  </tr>
+  <tr>
+    <td>December 19, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://business.inquirer.net/285716/satellite-to-boost-internet-in-ph-asia-pacific-launched</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Boeing Launches Satellite To Give Internet Access To 'Underserved Regions' </h3></td>
+  </tr>
+  <tr>
+    <td>Dec 18, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.nasdaq.com/articles/boeing-launches-satellite-to-give-internet-access-to-underserved-regions-2019-12-18</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Avanti Communications to work with UNHCR to provide satellite internet access across refugee camps in East Africa</h3></td>
+  </tr>
+  <tr>
+    <td> 18th December 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.avantiplc.com/news/avanti-communications-to-work-with-unhcr-to-provide-satellite-internet-access-across-refugee-camps-in-east-africa/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>ADB-backed satellite to improve internet access launches in US </h3></td>
+  </tr>
+  <tr>
+    <td>December 18, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.bworldonline.com/adb-backed-satellite-to-improve-internet-access-launches-in-us/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Viasat offers residential satellite internet to the most remote parts of Mexico     </h3></td>
+  </tr>
+  <tr>
+    <td>18 December 2019</td>
+  </tr>
+  <tr>
+    <td>https://latam-outsource.com/2019/12/18/viasat-offers-residential-satellite-internet-to-the-most-remote-parts-of-mexico/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Kacific1 Satellite Launch to Bring Affordable Internet to Remote Parts of Asia and Pacific </h3></td>
+  </tr>
+  <tr>
+    <td>17 December 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.adb.org/news/kacific1-satellite-launch-bring-affordable-internet-remote-parts-asia-and-pacific</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Here's Everything we Know About the Amazon Home Internet Service </h3></td>
+  </tr>
+  <tr>
+    <td>16 December 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.techtimes.com/articles/246504/20191216/heres-everything-we-know-about-the-amazon-home-internet-service.htm</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Viasat Lights Up Home Satellite Broadband in Mexico</h3></td>
+  </tr>
+  <tr>
+    <td>12/12/2019</td>
+  </tr>
+  <tr>
+    <td>https://www.lightreading.com/mobile/viasat-lights-up-home-satellite-broadband-in-mexico-/d/d-id/756251</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Kepler books SpaceX rideshare for LEO satellites </h3></td>
+  </tr>
+  <tr>
+    <td>by Caleb Henry — December 12, 2019</td>
+  </tr>
+  <tr>
+    <td>https://spacenews.com/kepler-books-spacex-rideshare-for-leo-satellites/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>ADB Funds Expansion Of Satellite Internet In Asia Pacific </h3></td>
+  </tr>
+  <tr>
+    <td>December 9, 2019</td>
+  </tr>
+  <tr>
+    <td>https://academiamag.com/adb-funds-expansion-of-satellite-internet-in-asia-pacific/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>November, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Inmarsat launches GX5 next generation satellite</h3></td>
+  </tr>
+  <tr>
+    <td>November 28, 2019</td>
+  </tr>
+  <tr>
+    <td>https://telecomdrive.com/increased-broadband-capacity-inmarsat-launches-gx5-next-generation-satellite/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Satellite will bring broadband internet to FSM </h3></td>
+  </tr>
+  <tr>
+    <td>November 15, 2019</td>
+  </tr>
+  <tr>
+    <td>https://pncguam.com/satellite-to-bring-broadband-internet-to-fsm/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Broadband satellite to serve Pacific islands delivered to Florida launch base</h3></td>
+  </tr>
+  <tr>
+    <td> November 15, 2019</td>
+  </tr>
+  <tr>
+    <td>https://spaceflightnow.com/2019/11/15/broadband-satellite-to-serve-pacific-islands-delivered-to-florida-launch-base/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Arabsat 6A and ST Engineering's Newtec Dialog To Transform Sudasat’s Broadband Internet Connectivity</h3></td>
+  </tr>
+  <tr>
+    <td>12 November 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.newtec.eu/article/release/arabsat-6a-and-st-engineering-s-newtec-dialog-to-transform-sudasat%E2%80%99s-broadband-internet-connectivity</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Kepler achieves a world-first for satellite broadband with 100Mbps connection to the Arctic</h3></td>
+  </tr>
+  <tr>
+    <td>  November 7, 2019</td>
+  </tr>
+  <tr>
+    <td>https://techcrunch.com/2019/11/07/kepler-achieves-a-world-first-for-satellite-broadband-with-100mbps-connection-to-the-arctic/</td>
+  </tr>
+  <tr>
+    <td>https://www.fiercewireless.com/tech/kepler-delivers-120-mbps-uplink-to-arctic-via-satellite-broadband</td>
+  </tr>
+  <tr>
+    <td>https://tech.slashdot.org/story/19/11/08/0121225/kepler-achieves-a-world-first-for-satellite-broadband-with-100mbps-connection-to-the-arctic</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Scientists in the Arctic get high-speed internet for the first time thanks to new satellite connection that's a hundred times faster than previously available</h3></td>
+  </tr>
+  <tr>
+    <td>7 November 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.dailymail.co.uk/sciencetech/article-7661205/Scientists-Arctic-high-speed-internet-time-satellites.html</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb wants to blanket the planet in high-speed satellite broadband</h3></td>
+  </tr>
+  <tr>
+    <td>  November 7, 2019</td>
+  </tr>
+  <tr>
+    <td>https://dnyuz.com/2019/11/07/oneweb-wants-to-blanket-the-planet-in-high-speed-satellite-broadband/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Hiber starts trials of “world first” satellite IoT network </h3></td>
+  </tr>
+  <tr>
+    <td>November 6, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.iotaustralia.org.au/2019/11/06/iotnewsglobal/hiber-starts-trials-of-world-first-satellite-iot-network/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>October, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>SpaceX intends to offer Starlink satellite broadband service starting in 2020</h3></td>
+  </tr>
+  <tr>
+    <td>  October 25, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://techcrunch.com/2019/10/24/spacex-intends-to-offer-starlink-satellite-broadband-service-starting-in-2020/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>French operator Nordnet selects Eutelsat for unlimited satellite broadband packages </h3></td>
+  </tr>
+  <tr>
+    <td>Thursday 17 October 2019</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.telecompaper.com/news/french-operator-nordnet-selects-eutelsat-for-unlimited-satellite-broadband-packages--1312455">https://www.telecompaper.com/news/french-operator-nordnet-selects-eutelsat-for-unlimited-satellite-broadband-packages--1312455</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb CEO Discusses Satellite Broadband Race With SpaceX and Amazon </h3></td>
+  </tr>
+  <tr>
+    <td>By Sissi Cao • 10/17/2019 </td>
+  </tr>
+  <tr>
+    <td><a href="https://observer.com/2019/10/oneweb-satellite-broadband-race-elon-musk-spacex-jeff-bezos-amazon/">https://observer.com/2019/10/oneweb-satellite-broadband-race-elon-musk-spacex-jeff-bezos-amazon/</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>EutelSat eyes introducing satellite Internet to Ethiopia Technology </h3></td>
+  </tr>
+  <tr>
+    <td>October 16, 2019</td>
+  </tr>
+  <tr>
+    <td>https://newbusinessethiopia.com/technology/eutelsat-eyes-introducing-satellite-internet-to-ethiopia/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>SpaceX seeks permission to launch 30,000 more satellites </h3></td>
+  </tr>
+  <tr>
+    <td> Oct. 15, 2019</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.latimes.com/business/story/2019-10-15/spacex-30000-starlink-satellites">https://www.latimes.com/business/story/2019-10-15/spacex-30000-starlink-satellites</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Amazon exec Dave Limp expects Project Kuiper satellites to boost sales and cloud</h3></td>
+  </tr>
+  <tr>
+    <td> October 10, 2019</td>
+  </tr>
+  <tr>
+    <td><a href="https://news.yahoo.com/amazon-exec-dave-limp-expects-213500642.html">https://news.yahoo.com/amazon-exec-dave-limp-expects-213500642.html</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>ILS to launch Eutelsat 5 West on 9 October</h3></td>
+  </tr>
+  <tr>
+    <td> October 8, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.broadbandtvnews.com/2019/10/08/ils-to-launch-eutelsat-5-west-on-9-october/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb talks satellite broadband speeds, constellation configs </h3></td>
+  </tr>
+  <tr>
+    <td>Doug MohneyOctober 7, 2019</td>
+  </tr>
+  <tr>
+    <td>by Doug MohneyOctober 7, 2019</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Global IP's African Broadband Satellite Service to Try Again</h3></td>
+  </tr>
+  <tr>
+    <td>October 7th, 2019 </td>
+  </tr>
+  <tr>
+    <td><a href="https://www.satnews.com/story.php?number=1976608605">https://www.satnews.com/story.php?number=1976608605</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>September, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>DICT eyes activating satellite slots to provide faster, cheaper connectivity </h3></td>
+  </tr>
+  <tr>
+    <td>By: Pathricia Ann V. Roxas -  September 27, 2019 </td>
+  </tr>
+  <tr>
+    <td><a href="https://newsinfo.inquirer.net/1170499/dict-eyes-activating-satellite-slots-to-provide-faster-cheaper-connectivity">https://newsinfo.inquirer.net/1170499/dict-eyes-activating-satellite-slots-to-provide-faster-cheaper-connectivity</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Viasat, Ubix to bring satellite broadband to Mexican schools, clinics and government institutions </h3></td>
+  </tr>
+  <tr>
+    <td>Wednesday 25 September 2019</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.telecompaper.com/news/viasat-ubix-to-bring-satellite-broadband-to-mexican-schools-clinics-and-government-institutions--1309679">https://www.telecompaper.com/news/viasat-ubix-to-bring-satellite-broadband-to-mexican-schools-clinics-and-government-institutions--1309679</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Hughes to launch satellite broadband service in Mexico </h3></td>
+  </tr>
+  <tr>
+    <td>by Mike Robuck | Sep 25, 2019 </td>
+  </tr>
+  <tr>
+    <td><a href="https://www.fiercetelecom.com/telecom/hughes-to-launch-satellite-broadband-service-mexico">https://www.fiercetelecom.com/telecom/hughes-to-launch-satellite-broadband-service-mexico</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.lightreading.com/services/broadband-services/hughes-beams-satellite-internet-service-into-mexico-/d/d-id/754367?_mc=RSS_LR_EDT">https://www.lightreading.com/services/broadband-services/hughes-beams-satellite-internet-service-into-mexico-/d/d-id/754367?_mc=RSS_LR_EDT</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Ivory Coast eyes better online access with satellite broadband</h3></td>
+  </tr>
+  <tr>
+    <td>September 24, 2018</td>
+  </tr>
+  <tr>
+    <td>https://www.youtube.com/watch?v=vleFYexPZqE</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Russia’s RSCC to Provide Satellite Internet for Thai Ships </h3></td>
+  </tr>
+  <tr>
+    <td>September 23, 2019</td>
+  </tr>
+  <tr>
+    <td><a href="https://russiabusinesstoday.com/technology/russias-rscc-to-provide-satellite-internet-for-thai-ships/">https://russiabusinesstoday.com/technology/russias-rscc-to-provide-satellite-internet-for-thai-ships/</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Thaicom and Russian Satellite Communications Company tie</h3></td>
+  </tr>
+  <tr>
+    <td>September 22, 2019</td>
+  </tr>
+  <tr>
+    <td><a href="http://satelliteprome.com/news/thaicom-and-russian-satellite-communications-company-partner/">http://satelliteprome.com/news/thaicom-and-russian-satellite-communications-company-partner/</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Remote African Areas to Receive SATCOM Connectivity via Azercosmos and INTERSAT Partnership</h3></td>
+  </tr>
+  <tr>
+    <td>September 21st, 2019 </td>
+  </tr>
+  <tr>
+    <td>http://www.satnews.com/story.php?number=42700703&amp;menu=1</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Thaicom, RSCC to Develop Maritime Satcom Service</h3></td>
+  </tr>
+  <tr>
+    <td> By Annamarie Nyirady | September 20, 2019 By Annamarie Nyirady | September 20, 2019</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.satellitetoday.com/business/2019/09/20/thaicom-rscc-to-develop-maritime-satcom-service/">https://www.satellitetoday.com/business/2019/09/20/thaicom-rscc-to-develop-maritime-satcom-service/</a></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Speedcast, Nelco Awarded Connectivity Contract for Indian Cruise Line </h3></td>
+  </tr>
+  <tr>
+    <td>September 19, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/mobility/2019/09/19/speedcast-nelco-awarded-connectivity-contract-for-indian-cruise-line/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>KVH Announces Iridium Certus as Companion to KVH VSAT Systems for Optimal Vessel Communications </h3></td>
+  </tr>
+  <tr>
+    <td>MIDDLETOWN, R.I., Sept. 19, 2019 </td>
+  </tr>
+  <tr>
+    <td>http://ir.kvh.com/news-releases/news-release-details/kvh-announces-iridium-certus-companion-kvh-vsat-systems-optimal</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>SpaceX bringing broadband Internet from space to Southern states like Alabama? </h3></td>
+  </tr>
+  <tr>
+    <td>Lenise Ligon Updated Sep 18, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.fox10tv.com/news/spacex-bringing-broadband-internet-from-space-to-southern-states-like/article_710b7730-da6b-11e9-88d9-1b01fffdf2f3.html</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Starlink to fill lion’s share of SpaceX near-term launch manifest </h3></td>
+  </tr>
+  <tr>
+    <td>September 18, 2019</td>
+  </tr>
+  <tr>
+    <td>https://spaceflightnow.com/2019/09/18/starlink-to-fill-lions-share-of-spacex-near-term-launch-manifest/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>SES wins Mediterranean ferry broadband contracts </h3></td>
+  </tr>
+  <tr>
+    <td>By Chris Forrester September 17, 2019</td>
+  </tr>
+  <tr>
+    <td>https://advanced-television.com/2019/09/17/ses-wins-mediterranean-ferry-broadband-contracts/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Department of Homeland Security Selects Hughes for Tactical Satellite Communications under New TacCom II Contract </h3></td>
+  </tr>
+  <tr>
+    <td>September 17, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.hughes.com/resources/press-releases/department-homeland-security-selects-hughes-tactical-satellite</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Arabsat strikes deal with Universal Satcom to bring connectivity to Yemen</h3></td>
+  </tr>
+  <tr>
+    <td>September 16, 2019</td>
+  </tr>
+  <tr>
+    <td>https://satelliteprome.com/news/arabsat-strikes-deal-with-universal-satcom-to-bring-connectivity-to-yemen/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Viasat Expands Business Internet Service Offerings in North America </h3></td>
+  </tr>
+  <tr>
+    <td>September 16, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/broadband/2019/09/16/viasat-expands-business-internet-service-offerings-in-north-america/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Satellite Connectivity Provider Viasat Puts International Sales Within Reach For Partners </h3></td>
+  </tr>
+  <tr>
+    <td>.By Gina Narcisi September 16, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.crn.com/news/networking/satellite-connectivity-provider-viasat-puts-international-sales-within-reach-for-partners</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>SpaceX Says It Will Deploy Satellite Broadband Across US Faster Than Expected </h3></td>
+  </tr>
+  <tr>
+    <td>September 13, 2019</td>
+  </tr>
+  <tr>
+    <td>https://tech.slashdot.org/story/19/09/12/2152215/spacex-says-it-will-deploy-satellite-broadband-across-us-faster-than-expected</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Avanti and Arabsat An Amicable Agreement At Last</h3></td>
+  </tr>
+  <tr>
+    <td>September 11th, 2019 </td>
+  </tr>
+  <tr>
+    <td>http://www.satnews.com/story.php?number=1705141333</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Australia’s Optus Satellite Uses Hughes Jupiter System </h3></td>
+  </tr>
+  <tr>
+    <td>By Annamarie Nyirady | September 11, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/mobility/2019/09/11/australias-optus-satellite-uses-hughes-jupiter-system/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>GoGo Surpasses 1500 Commercial Aircraft With IFC </h3></td>
+  </tr>
+  <tr>
+    <td>By Annamarie Nyirady | September 11, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/mobility/2019/09/11/gogo-surpasses-1500-commercial-aircraft-with-ifc/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Hughes India Launches Maritime Mobility Services</h3></td>
+  </tr>
+  <tr>
+    <td> 9/10/19 </td>
+  </tr>
+  <tr>
+    <td>https://dc.citybizlist.com/article/570445/hughes-india-launches-maritime-mobility-services</td>
+  </tr>
+  <tr>
+    <td>https://www.benzinga.com/pressreleases/19/09/n14401997/hughes-india-launches-maritime-mobility-services</td>
+  </tr>
+  <tr>
+    <td>https://menafn.com/1098985493/Hughes-India-Launches-Maritime-Mobility-Services</td>
+  </tr>
+  <tr>
+    <td>https://www.marketscreener.com/ECHOSTAR-CORPORATION-782521/news/Echostar-Hughes-India-Launches-Maritime-Mobility-Services-29182004/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Microsoft Extends Azure ExpressRoute Service with Satellite Partners     </h3></td>
+  </tr>
+  <tr>
+    <td>09/10/2019</td>
+  </tr>
+  <tr>
+    <td>https://redmondmag.com/articles/2019/09/10/azure-expressroute-service-satellite-partners.aspx</td>
+  </tr>
+  <tr>
+    <td>https://azure.microsoft.com/en-us/blog/satellite-connectivity-expands-reach-of-azure-expressroute-across-the-globe/</td>
+  </tr>
+  <tr>
+    <td>https://www.sdxcentral.com/articles/news/microsoft-launches-azure-into-orbit-with-expressroute/2019/09/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>mu Space signs first customer Zeta IOS among 7 partners for upcoming high throughput satellite </h3></td>
+  </tr>
+  <tr>
+    <td>Tuesday, September 10, 2019</td>
+  </tr>
+  <tr>
+    <td>http://www.spaceref.com/news/viewpr.html?pid=54604</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Indonesia Federal Police Receive Satellite Broadband on the Move Technology</h3></td>
+  </tr>
+  <tr>
+    <td>Tuesday, September 10, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.rrmediagroup.com/News/NewsDetails/NewsID/18688</td>
+  </tr>
+  <tr>
+    <td>http://www.satnews.com/story.php?number=149986617&amp;menu=1</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Viasat Introduces Direct Cloud Connect Service </h3></td>
+  </tr>
+  <tr>
+    <td>By Annamarie Nyirady | September 9, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/innovation/2019/09/09/viasat-introduces-direct-cloud-connect-service/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Algérie Telecom Satellite Selects Hughes JUPITER System to Launch Satellite Internet Service </h3></td>
+  </tr>
+  <tr>
+    <td> September 9, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.streetinsider.com/PRNewswire/Alg%C3%A9rie+Telecom+Satellite+Selects+Hughes+JUPITER+System+to+Launch+Satellite+Internet+Service/15894651.html</td>
+  </tr>
+  <tr>
+    <td>https://www.telecompaper.com/news/ats-selects-hughes-jupiter-system-to-launch-satellite-internet-service-2--1307483</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>SES Selects SpaceX to Launch Groundbreaking O3b mPOWER MEO Communications System  </h3></td>
+  </tr>
+  <tr>
+    <td>09 Sep 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.ses.com/press-release/ses-selects-spacex-launch-groundbreaking-o3b-mpower-meo-communications-system</td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/launch/2019/09/09/spacex-to-launch-ses-o3b-mpower-meo-satellites/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb targets the Arctic for the kickoff of its satellite broadband service in 2020</h3></td>
+  </tr>
+  <tr>
+    <td>  Alan Boyle, September 5, 2019</td>
+  </tr>
+  <tr>
+    <td><p>https://finance.yahoo.com/news/oneweb-targets-arctic-kickoff-satellite-234003486.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=</p>
+      <p>AQAAALqcT9YT-yMc5tNx7cOy4HcdtNtNVBF5rXxOYf6s6R0BQhGnvPT8qTB-cHd-</p>
+      <p>x8nAVB4x4m0mAStIO7wPbmS1lgqI2NUvXQTG4bdQPTO3Xr_ZjjbY0EvL51axD_</p>
+      <p>TqliEoVNbnpyJi3U0JH1L8lAHg_MXViEhgmpPFpWZkr8i5sDS-&amp;guccounter=2</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Viasat Increases Network Speeds </h3></td>
+  </tr>
+  <tr>
+    <td>September 5, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/mobility/2019/09/05/viasat-increases-network-speeds/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>It's not so grim up North as fast Internet reaches the Arctic </h3></td>
+  </tr>
+  <tr>
+    <td>Martyn Warwick, Sep 5, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.telecomtv.com/content/satellite/its-not-so-grim-up-north-as-fast-internet-reaches-the-arctic-36235/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb’s first commercial satellite service will bring broadband to the Arctic </h3></td>
+  </tr>
+  <tr>
+    <td>Paul Sawers,	September 4, 2019</td>
+  </tr>
+  <tr>
+    <td>https://venturebeat.com/2019/09/04/onewebs-first-commercial-satellite-service-will-bring-broadband-to-the-arctic/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Hughes, Facebook Launch Wi-Fi Hotspots in Colombia </h3></td>
+  </tr>
+  <tr>
+    <td>By Annamarie Nyirady | September 4, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/mobility/2019/09/04/hughes-facebook-launch-wi-fi-hotspots-in-colombia/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Iridium and Thales Expand Partnership to Deliver Aircraft Connectivity Services</h3></td>
+  </tr>
+  <tr>
+    <td>Sept. 3, 2019</td>
+  </tr>
+  <tr>
+    <td>http://investor.iridium.com/2019-09-03-Iridium-and-Thales-Expand-Partnership-to-Deliver-Aircraft-Connectivity-Services</td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/mobility/2019/09/03/iridium-thales-deliver-aircraft-connectivity-services/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Eutelsat withdraws from C-Band Alliance</h3></td>
+  </tr>
+  <tr>
+    <td> September 3, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.broadbandtvnews.com/2019/09/03/eutelsat-withdraws-from-c-band-alliance/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Kacific to bring satellite broadband to 276,000 people in French Polynesia</h3></td>
+  </tr>
+  <tr>
+    <td> Tuesday 3 September 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.telecompaper.com/news/kacific-to-bring-satellite-broadband-to-276000-people-in-french-polynesia--1306680</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Gravity Internet to offer rural broadband on Kacific1 satellite  </h3></td>
+  </tr>
+  <tr>
+    <td> 03 September, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.computerworld.co.nz/article/665953/gravity-internet-offer-rural-broadband-kacific1-satellite/</td>
+  </tr>
+  <tr>
+    <td>http://www.scoop.co.nz/stories/BU1909/S00042/gravity-and-kacific-bring-competition-to-broadband-market.htm</td>
+  </tr>
+  <tr>
+    <td>https://bizedge.co.nz/story/gravity-and-kacific-partner-to-bring-broadband-to-rural-nz</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Ovzon no longer to launch on SpaceX Falcon Heavy having signed contract with Arianespace although SpaceX does gain Astranis 1 </h3></td>
+  </tr>
+  <tr>
+    <td>Matt Wilson | Sep 2, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.seradata.com/ovzon-no-longer-to-launch-on-spacex-falcon-heavy-having-signed-contract-with-arianespace/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>August, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>  <h3>Axesat Selects Hughes Ka-band Satellite Internet Service for its Latin American Customers</h3></td>
+  </tr>
+  <tr>
+    <td>August 30th, 2019</td>
+  </tr>
+  <tr>
+    <td>http://www.satnews.com/story.php?number=1341735690&amp;menu=1</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>BigBlu’s accelerated growth strategy</h3></td>
+  </tr>
+  <tr>
+    <td>Simon Thompson August 29, 2019 </td>
+  </tr>
+  <tr>
+    <td>https://www.investorschronicle.co.uk/comment/2019/08/29/bigblu-s-accelerated-growth-strategy/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Celebrating the Launch of Arctic Broadband Point of Presence in Utqiaġvik </h3></td>
+  </tr>
+  <tr>
+    <td>August 29, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.asrc.com/press/celebrating-the-launch-of-arctic-broadband-point-of-presence-in-utqiagvik/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Connect South Dakota project brings broadband to rural areas     </h3></td>
+  </tr>
+  <tr>
+    <td>Del Bartels, Capital Journal Aug 28, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.capjournal.com/cjbureau/connect-south-dakota-project-brings-broadband-to-rural-areas/article_dd54ff6e-c9d2-11e9-9710-f3de9a4c9b2f.html</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Astranis reserves a ride with SpaceX for satellite that’ll boost broadband in Alaska</h3></td>
+  </tr>
+  <tr>
+    <td> Alan Boyle , August 27, 2019</td>
+  </tr>
+  <tr>
+    <td><p>https://news.yahoo.com/astranis-reserves-ride-spacex-satellite-175413750.html?guccounter=1&amp;guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&amp;guce_referrer_sig=AQAAALqcT9YT-yMc5tNx7cOy4HcdtNtNVBF5rXxOYf6s6R0BQhGnvPT8qTB-cHd-x8nAVB4x4m0mAStIO7wPbmS1lgqI2NUvXQTG4bdQPTO3Xr_ZjjbY0EvL51axD_</p>
+      <p>TqliEoVNbnpyJi3U0JH1L8lAHg_MXViEhgmpPFpWZkr8i5sDS-</p></td>
+  </tr>
+  <tr>
+    <td>https://infonews.news/satellite-internet-startup-astranis-books-first-commercial-launch-on-spacex-falcon-9</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Arianespace will launch Ovzon-3 satellite </h3></td>
+  </tr>
+  <tr>
+    <td>Evry,  Aug 28, 2019</td>
+  </tr>
+  <tr>
+    <td>http://www.spacedaily.com/reports/Arianespace_will_launch_Ovzon_3_satellite_999.html</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Satellite internet startup Astranis books first commercial launch on SpaceX Falcon 9 </h3></td>
+  </tr>
+  <tr>
+    <td>Darrell Etherington August 27, 2019</td>
+  </tr>
+  <tr>
+    <td>https://techcrunch.com/2019/08/26/satellite-internet-startup-astranis-books-first-commercial-launch-on-spacex-falcon-9/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Viasat, ReadyNet Demonstrate Satellite Internet Across Jamaica  </h3></td>
+  </tr>
+  <tr>
+    <td>By Annamarie Nyirady | August 23, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/broadband/2019/08/23/viasat-readynet-demonstrate-satellite-internet-across-jamaica/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Hughes, Virtual Network Communications Extend LTE Coverage  </h3></td>
+  </tr>
+  <tr>
+    <td>By Annamarie Nyirady | August 20, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.satellitetoday.com/mobility/2019/08/20/hughes-virtual-network-communications-extend-lte-coverage/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>July, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb opens Florida factory, gets SoftBank Corp support </h3></td>
+  </tr>
+  <tr>
+    <td>by Doug Mohney July 26, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.spaceitbridge.com/oneweb-opens-florida-factory-gets-softbank-corp-support.htm</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Space-based internet the focus of new OneWeb Florida satellite factory </h3></td>
+  </tr>
+  <tr>
+    <td>By William Harwood July 22, 2019 / CBS News </td>
+  </tr>
+  <tr>
+    <td>https://www.cbsnews.com/news/oneweb-satellite-factory-florida-space-based-internet/</td>
+  </tr>
+  <tr>
+    <td><p align="left">&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb announces 400 Mbps satellite broadband test results </h3></td>
+  </tr>
+  <tr>
+    <td><p align="left"> Doug Mohney, July 17, 2019</p></td>
+  </tr>
+  <tr>
+    <td>https://www.spaceitbridge.com/oneweb-announces-400-mbps-satellite-broadband-test-results.htm</td>
+  </tr>
+  <tr>
+    <td>https://www.ispreview.co.uk/index.php/2019/07/live-test-of-onewebs-leo-satellite-broadband-network-hits-400mbps.html</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>OneWeb satellites deliver real-time HD streaming from space </h3></td>
+  </tr>
+  <tr>
+    <td>Alana Foster 17 July 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.ibc.org/publish/oneweb-satellites-deliver-real-time-hd-streaming-from-space/4125.article</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Amazon plans nationwide broadband—with both home and mobile service Amazon seeks FCC approval to launch 3,236 low-Earth broadband satellites.</h3></td>
+  </tr>
+  <tr>
+    <td> Jon Brodkin - 7/9/2019</td>
+  </tr>
+  <tr>
+    <td>https://arstechnica.com/information-technology/2019/07/amazon-follows-spacex-into-satellite-broadband-asks-fcc-to-ok-launch-plan/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>June, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Could Amazon Beat SpaceX In Satellite Broadband Internet Space Race? </h3></td>
+  </tr>
+  <tr>
+    <td>By Rich Smith 06/12/19 </td>
+  </tr>
+  <tr>
+    <td>https://www.ibtimes.com/could-amazon-beat-spacex-satellite-broadband-internet-space-race-2800080</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>May, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>SpaceX Is Banking on Satellite Internet. Maybe It Shouldn't </h3></td>
+  </tr>
+  <tr>
+    <td>John Raoux/AP Update 5-23-2019</td>
+  </tr>
+  <tr>
+    <td>https://www.wired.com/story/spacex-starlink-satellite-internet/</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>Elon Musk just revealed new details about Starlink, a plan to surround Earth with 12,000 high-speed internet satellites. Here's how it might work</h3></td>
+  </tr>
+  <tr>
+    <td><p>Dave Mosher, Business Insider      16.05.2019</p></td>
+  </tr>
+  <tr>
+    <td><p>https://www.businessinsider.de/spacex-starlink-satellite-internet-how-it-works-2019-5?r=US&amp;IR=T</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>April, 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td> <h3>Amazon will launch thousands of satellites to provide internet around the world 27 comments 3,236 satellites will provide internet from low Earth orbit </h3></td>
+  </tr>
+  <tr>
+    <td>By Jon Porter, Apr 4, 2019</td>
+  </tr>
+  <tr>
+    <td>https://www.theverge.com/2019/4/4/18295310/amazon-project-kuiper-satellite-internet-low-earth-orbit-facebook-spacex-starlink</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#D6DADE"><h3>March 2019</h3></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><h3>OneWeb launches first broadband satellites</h3></td>
+  </tr>
+  <tr>
+    <td><p><span data-date-timezone="{'publishdate': '2019-02-28T22:11:00','format': 'D MMMM YYYY'}">1 March 2019</span></p>    </td>
+  </tr>
+  <tr>
+    <td>https://www.ibc.org/publish/oneweb-launches-first-broadband-satellites-/3623.article</td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p>    </td>
+  </tr>
+</table>
+
+
+
+
+<iframe width="5" height="3" src="https://www.youtube.com/embed/aRue8CY5tYg?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+
+
+
+<!-- InstanceEndEditable --></td>
+    </tr>
+    
+</table>
+
+
+</body>
+<!-- InstanceEnd --></html>

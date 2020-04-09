@@ -1,0 +1,972 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- InstanceBegin template="/Templates/angelia.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+
+<TITLE>Satellite Broadband Internet Consulting & Related Modem IP Cores Design </TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+
+<!- English Meta //-->
+<meta name="abstract" content="Satellite Broadband Internet Modem IP Cores">
+<meta content="author" name="markchen@xmail.net">
+<meta name="keywords" content="Satellite, Broadband, Internet, Modem,Modulation, Demodulation, IC, IP core">
+<meta name="description" content="Angelia designs satellite broadband Internet modem IP cores and provides technical and business consulting">
+
+
+<link rel="stylesheet" href="../yyy_scripts/myscript/myscript_en.css" type="text/css">
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>  
+
+
+
+
+<link href="../yyy_scripts/dropdownmenu_lwis/css/helper.css" media="screen" rel="stylesheet" type="text/css" />
+
+<!-- Beginning of compulsory code below -->
+
+<link href="../yyy_scripts/dropdownmenu_lwis/css/dropdown.linear.columnar.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../yyy_scripts/dropdownmenu_lwis/css/default.advanced.css" media="screen" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.lwis-celebrity table tr td {
+	font-size: 14px;
+}
+.lwis-celebrity table tr td strong {
+	color: #408080;
+}
+body,td,th {
+	font-size: 16px;
+	color: #697696;
+}
+#headtitle {
+	color: #3474CB;
+	font-size: 24px;
+}
+</style>
+
+<!-- / END -->
+
+
+
+</head>
+<body>
+<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+  
+  
+    <td width="94"><img src="../yyy_scripts/dropdownmenu_lwis/images/logo_lwis.png" alt="LWIS.net" />
+    <td width="244"><strong>Angelia </strong></td>
+    <td width="10">&nbsp;</td>
+    <td width="657" align="right"><strong id="headtitle"> Expert of Satellite Broadband Technologies </strong></td>
+
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td align="right">&nbsp;</td>
+  </tr>
+  
+  
+</table>
+<!-- Beginning of compulsory code below -->
+
+<ul class="dropdown dropdown-linear dropdown-columnar" id="nav" name="nav">
+
+	<li><a href="../index.html">Home</a></li>     
+    
+  <li class="dir"><a href='../knowledge/000knowledge.htm'><span>Knowledge</span></a>
+		<ul>
+			<li class="dir"><a href='../knowledge/satnet.htm'><span>Satellite Broadband</span></a>
+				<ul>
+					<li><a href="../knowledge/satnet/broadband.htm" target="_blank">SATELLITE BROADBAND INTERNET </a></li>
+        <li><a href="../knowledge/satnet/twoway.htm" target="_blank">TWO WAY SATELLITE</a></li>
+        <li><a href="../knowledge/satnet/howto.htm" target="_blank">How to Choose the Best Amongst Satellite Broadband Internet Providers</a></li>
+        <li><a href="../knowledge/satnet/qa.htm" target="_blank">Q&amp;A About Satellite Broadband Internet</a></li>
+				</ul>
+			</li>
+            
+            
+			<li class="dir"><a href='../knowledge/outdoorunits.htm'><span>Outdoor Units</span></a>
+				<ul>
+					
+        <li>
+          <a href="../knowledge/outdoorunits/tria.htm" target="_blank">Transmit and Receive Integrated Assembly (TRIA) </a>
+        </li>
+        <li>
+          <a href="../knowledge/outdoorunits/frequencyconverters.htm" target="_blank">SATELLITE FREQUENCY CONVERTERS </a>
+          
+            <li>
+              <a href="../knowledge/outdoorunits/downconverter.htm" target="_blank">SATELLITE DOWNCONVERTER </a>
+            </li>
+            <li>
+              <a href="../knowledge/outdoorunits/upconverter.htm" target="_blank">SATELLITE UPCONVERTER </a>
+            </li>
+          
+        
+        <li>
+          <a href="../knowledge/outdoorunits/orthomode_transducer.htm" target="_blank">ORTHOMODE TRANSDUCER (OMT) </a>
+        </li>
+        <li>
+          <a href="../knowledge/outdoorunits/feedhorns.htm" target="_blank">FEED HORN </a>
+        </li>
+				</ul>
+			
+			<li class="dir"><a href='../knowledge/antennas.htm'><span>Antennas</span></a>
+				<ul>
+					<li>
+        <a href="../knowledge/antennas/transmitreceiveantenna.htm" target="_blank">TRANSMIT-RECEIVE ANTENNA </a>
+      </li>
+      <li>
+        <a href="../knowledge/antennas/antenna_components.htm" target="_blank">ANTENNA COMPONENTS </a>
+      </li>
+				</ul>
+			</li>
+            
+			<li class="dir"><a href='../knowledge/terminals.htm'><span>Terminals</span></a>
+				<ul>
+					<li><a href="./"></a></li>
+				</ul>
+			</li>
+            
+            
+			<li class="dir"><a href='../knowledge/indoorunits.htm'><span>Indoor Units</span></a>
+				<ul>
+					<li><a href="./"></a></li>
+				</ul>
+			</li>
+            
+			<li class="dir"><a href='../knowledge/modemschips.htm'><span>Modems</span></a>
+				<ul>
+                
+					<li><a href="../knowledge/modemschips/modem_structure_layout.htm" target="_blank"> Modem Internal Structure &amp; Circuits</a></li>
+					<li><a href="../knowledge/modemschips/modems_pics.htm" target="_blank">Modems Pictures - Typical </a></li>
+					<li><a href="../knowledge/modemschips/baseband_processing.htm" target="_blank">Baseband Processing</a></li>
+                    
+					<li><a href="../knowledge/modemschips/clocking_timing.htm" target="_blank">Clocking / Timing</a></li>
+					<li><a href="../knowledge/modemschips/coding_modulation.htm" target="_blank">Coding &amp; Modulation </a></li>
+					<li><a href="../knowledge/modemschips/demapper.htm" target="_blank">Demapper</a></li>
+					<li><a href="../knowledge/modemschips/demodulator.htm" target="_blank">Demodulator</a></li>
+					<li><a href="../knowledge/modemschips/forward_channel.htm" target="_blank">Forward Channel</a></li>
+					<li><a href="../knowledge/modemschips/lband_ifpcb.htm" target="_blank">L-Band/IF Printed Circuit Card</a></li>
+                    
+					<li><a href="../knowledge/modemschips/loopback.htm" target="_blank">Loopback Features</a></li>
+					<li><a href="../knowledge/modemschips/miscellaneous.htm" target="_blank">Miscellaneous Subjects </a></li>
+					<li><a href="../knowledge/modemschips/modulator.htm" target="_blank">Modulator</a></li>
+					<li><a href="../knowledge/modemschips/multiplexer_demultiplexer.htm" target="_blank">Multiplexer / Demultiplexer</a></li>
+					<li><a href="../knowledge/modemschips/networktype.htm" target="_blank">Network Type</a></li>
+					<li><a href="../knowledge/modemschips/return_channel.htm" target="_blank">Return Channel </a></li>
+					<li><a href="../knowledge/modemschips/scrambling.htm" target="_blank">Scrambling</a></li>
+                    
+					<li><a href="../knowledge/modemschips/special_technologies.htm" target="_blank">Special Technologies </a></li>
+					<li><a href="../knowledge/modemschips/tuner.htm" target="_blank">Tuner</a></li>
+                    
+                    
+				</ul>
+			</li>
+            
+            
+            
+            
+		</ul>
+  </li>
+    
+    
+    
+	<li class="dir"><a href='../research_design/research_design.htm'><span>R & D </span></a>
+		<ul>
+        
+            
+            <li class="dir"><a href='../research_design/research.htm'><span>Research</span></a>
+				<ul>
+					<li><a href="../research_design/research/literature.htm" target="_blank">Literature of Modem Research </a></li>
+        <li><a href="../research_design/research/positions.htm" target="_blank">PhD and Research Positions for Satellite Modems </a></li>
+        
+        <li><a href="../research_design/research/projects.htm" target="_blank">Current Research Projects </a></li>
+				</ul>
+			</li>         
+            
+            
+            <li class="dir"><a href='../research_design/design.htm'><span>Design</span></a>
+				<ul>
+        <li><a href="../research_design/design/literature.htm" target="_blank">Literature in Wireless/Satellie Communications / Modem Design </a></li>
+        
+					<li><a href="../research_design/design/jobs.htm" target="_blank">Modem Design Jobs  </a></li>
+                    <li><a href="../research_design/design/projects.htm" target="_blank">Current Design Projects  </a></li>
+				</ul>
+			</li>
+            
+            
+        
+        
+		</ul>
+	</li>
+    
+    
+    
+    
+	<li class="dir"><a href='000products.htm'><span>Products</span></a>
+		<ul>      
+        
+            <li><a href='terminals.htm'><span>Satellite Terminals</span></a>
+			</li>
+			<li><a href='indoorunits.htm'><span>Indoor Units</span></a>
+			</li>
+			<li><a href='modems.htm'><span>Modems</span></a>
+			</li>
+			<li><a href='modulators.htm'><span>Modulators</span></a>
+        
+			</li>
+			<li><a href='demodulators.htm'><span>Demodulators</span></a>
+			</li>
+			<li><a href='others.htm'><span>Others</span></a>
+        
+        
+		</ul>
+	</li>
+    
+    
+    
+    
+    
+    
+	<li class="dir"><a href='../operators/operators.htm'><span>Operators</span></a>
+		<ul>
+                
+        
+            <li><a href='../operators/tier1.htm'><span>Tier 1</span></a>
+			</li>
+			<li><a href='../operators/tier2.htm'><span>Tier 2</span></a>
+			</li>
+			<li><a href='../operators/tier3.htm'><span>Tier 3</span></a>
+			</li>
+			<li><a href='../operators/china.htm'><span>China</span></a>
+        
+        
+		</ul>
+	</li>
+    
+    
+    
+    
+<!-- Beginning of compulsory code below-->
+    
+    
+	<li class="dir"><a href='../news/news.htm'><span>News</span></a>
+		<ul>
+        
+        
+            <li><a href='../news/operations.htm'><span>Operations of the Satellite Broadband Internet</span></a>
+			</li>
+			<li><a href='../news/tech.htm'><span>Technology of the Satellite Broadband Internet</span></a>
+			</li>
+			<li><a href='../news/general.htm'><span>General Info of the Satellite Broadband Internet</span></a>
+			</li>
+			<li><a href='../news/china.htm'><span>China's Satellite Broadband Internet</span></a>
+			</li>
+			<li><a href='../news/company_news.htm'><span>Angelia News</span></a>
+        
+		</ul>
+	</li>
+    
+    <!-- --> 
+    
+    
+    
+	<li class="dir"><a href='../expertise/expertise.htm'><span>Expertise</span></a>
+		<ul>
+            <li><a href='../expertise/consulting.htm'><span>Satellite Broadband Internet Consulting and Technical Services</span></a>
+			</li>
+			<li><a href='../expertise/modemipcores.htm'><span>Design of Modulator, Demodulator & Modem ICs</span></a>
+			</li>
+            
+            <!--
+			<li><a href='../expertise/icdesign.htm'><span>IC design</a>
+			</li>
+			<li><a href='../expertise/reports.htm'><span>China satellite broadband monthly report</a>
+			</li>
+			<li><a href='../expertise/china_marketing.htm'><span>China Marketing</span></a>
+            -->
+            
+            </li>
+			<li><a href='../expertise/contact.htm'><span>Contact</span></a>
+			</li>
+			<li><a href='../expertise/founder.htm'><span>The founder</a>
+			</li>
+            
+		</ul>
+	</li>
+    
+    
+    
+    
+    
+    
+	<li><a href='../expertise/contact.htm'>Contact</a></li>
+    
+    
+    
+    
+</ul>
+
+<p>
+  <!-- / END -->
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="900" align="center">
+  
+  <tr>
+          <td width="900" height="16" align="center" valign="top"><!-- InstanceBeginEditable name="modules" -->
+<table width="100%" border="0">
+  <tr>
+    <td colspan="4"><h1 align="center" style="color: #996633">Modems Supplier List </h1></td>
+  </tr>
+  <tr>
+    <td colspan="4"><h2 align="center">Satellite Modem (Modulator and Demodulator) Designers and Suppliers </h2>
+      <p align="center" style="font-weight: bold">Satellite Modulator and Demodulator IP Core Designers and Suppliers </p>
+      <p></p></td>
+  </tr>
+  <tr>
+    <td colspan="4"><h3 style="color: #999966">They are listed according to the alphabetical order of their corresponding top level domains. </td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center"><img src="modems1.jpg" width="168" height="172" alt="modems" /></td>
+  </tr>
+  <tr>
+    <td width="49%" valign="top"><h2 align="center" style="font-weight: bold; color: #993333">Modem Suppliers for Satellite Broadband Internet      </h2>
+      <p style="font-weight: bold">&nbsp;</p>
+      <p><br />
+      </p>
+      <p>Advantech Wireless<br />
+        https://advantechwireless.com/</p>
+      <p>ASAT II System Compact Series VSAT Routers &amp; Terminals</p>
+      <p> </p>
+      <p>&nbsp;</p>
+      <p>Ayecka Communication Systems<br />
+        www.ayecka.com<br />
+        SM1 DVB-S2<br />
+        SCPC (Single Channel Per Carrier) satellite modem with Gigabit Ethernet interface</p>
+      <p><br />
+      </p>
+      <p> </p>
+      <p>BASEBAND CORES<br />
+        www.basebandcores.com</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>CarrierComm<br />
+        https://carriercomm.com<br />
+        TNS8820 Single Chip Modem<br />
+        CCM8910 Single Chip Modem<br />
+        Software Defined IDU<br />
+        Software Defined Modules</p>
+      <p>&nbsp;</p>
+      <p>Celestia Satellite Test &amp; Simulation BV (C-STS)<br />
+        www.celestia-sts.com<br />
+        TT&amp;C Modem<br />
+        TT&amp;C-IMBU (Integrated Modem and Baseband Unit) is a TTC Modem (Modulator/Demodulator) proving Telemetry, Tracking, and Command services for operational ground stations. <br />
+        TT&amp;C Modem for AIT<br />
+        The TTC-IMBU (Integrated Modem and Baseband Unit) is a TT&amp;C Modem for AIT (Modulator/Demodulator) allowing direct control and monitoring of the spacecraft in EGSE environments, such as RF SCOE’s and for use in operational ground stations.<br />
+      </p>
+      <p>&nbsp;</p>
+      <p><br />
+        Comtech EF Data / Radyne<br />
+        www.comtechtel.com<br />
+        www.comtechefdata.com</p>
+      <p>CDM-425 Advanced Satellite Modem<br />
+        CDM-570A/L &amp; CDM-570A/L-IP Satellite Modems<br />
+        CDM-570A/L-IPEN Satellite Modems<br />
+        CDM-625 Advanced Satellite Modem<br />
+        CDM-625-EN Advanced Satellite Modem<br />
+        CDM-625A Advanced Satellite Modem<br />
+        CDM-625A-EN Advanced Satellite Modem<br />
+        CDM-760 Advanced High-Speed Trunking and Broadcast Modem<br />
+        CDMER-625A Advanced Satellite Modem<br />
+        DMD1050TS L-Band Satellite Modem Board <br />
+        DMD2050E MIL-STD-188-165A/STANAG 4486 Edition 3 Compliant Universal Satellite Modem<br />
+        SLM-5650B Satellite Modem<br />
+        SLM-5650C &amp; SLM-5650C ODU CyberLynx Software Defined Modems </p>
+      <p>DM240XR Digital Video Broadcast Modulator with AutoEQ</p>
+      <p>CDD-564A/L &amp; CDD-562AL IP DemodulatorsCDD-564A/LEN &amp; CDD-562ALEN IP Demodulator<br />
+        SLM-5650BD Satellite Demodulator </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> Datum Systems<br />
+        https://datumsystems.com<br />
+        M7 Series Modems/Routers<br />
+        Available M7 Products</p>
+      <p> M7LT-Sat Terminal</p>
+      <p> DVBS-2X Modems<br />
+        M7-IF (50-180 MHz)<br />
+        M7-L-Band (950-2150 MHz)</p>
+      <p> M7D-IF Dual Demod<br />
+        M7LD-LB Dual Demod</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p> <br />
+        DLR-Institute of Communications and Navigation<br />
+        www.dlr.de</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> <br />
+      </p>
+      <p>ENENSYS/Teamcast<br />
+        https://www.enensys.com/<br />
+        www.teamcast.com<br />
+        TeamCast Vyper2Way Point to point Satellite Modem<br />
+        TeamCast Tyger Wideband Satellite Modulator<br />
+        TeamCast DualVyper Broadcast Satellite Modulator<br />
+        TeamCast Green4Cast DVB-T/T2 or ISDB-T/TB OEM Modulator<br />
+        TeamCast Neptune Satellite Demodulator<br />
+        TeamCast SmartGate S2/S2X IP/Ethernet Satellite Gateway</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><br />
+        ST Engineering iDirect<br />
+        www.idirect.net<br />
+        Evolution IP-based satellite communications system<br />
+        Velocity IP-based satellite communications system<br />
+        Series 15100 Universal Satellite Hub (5IF/20 Slot)<br />
+        iQ Desktop Satellite Router<br />
+        iQ LTE Series Satellite Router<br />
+        iQ 200 Integrated Router Board<br />
+        iQ 200 Rackmount Satellite Router<br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>Iridium<br />
+        www.iridium.com</p>
+      <p>Iridium 9522b modem</p>
+      <p> </p>
+      <p> <br />
+        <br />
+        Kratos/Real Time Logic<br />
+        www.kratosdefense.com<br />
+        www.rtlogic.com<br />
+        T400XR TT&amp;C Modem<br />
+        XR1 TT&amp;C Modem<br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>LGS Innovations<br />
+        www.lgsinnovations.com<br />
+        NASA’s Goddard Space Flight Center<br />
+        LCRD low Earth orbit (LEO) User Modem and Amplifier (ILLUMA)<br />
+        Integrated LCRD LEO (Low-Earth. Orbit) User Modem and. Amplifier – Terminal (ILLUMA-T)</p>
+      <p> <br />
+      </p>
+      <p> <br />
+        MaxLinear / Exar<br />
+        www.maxlinear.com<br />
+        www.exar.com</p>
+      <p>BCM85652 MicroWave MODEM Dual-core modem, with Wide Band IF DSP, High Capacity<br />
+        BCM85110 High Capacity MilliMeter Wave MODEM</p>
+      <p>MxL868 Full Spectrum Capture Satellite Digital ODU IC, 8 Input<br />
+        MxL865 Full Spectrum Capture Satellite Digital ODU IC, 5 Input<br />
+        MxL862 Full Spectrum Capture Satellite Digital ODU IC, 2 Input<br />
+      </p>
+      <p> </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><br />
+        ST Engineering Newtec<br />
+        www.newtec.eu</p>
+      <p>VSAT platform<br />
+        Newtec Dialog is a single-service and multiservice VSAT platform</p>
+      <p>Hubs<br />
+        HUB7208/7303 XIF HUB MODULE<br />
+        HUB6504 4IF HUB MODULE<br />
+        HUB6501 1IF HUB MODULE<br />
+        HUB6000<br />
+      </p>
+      <p>Satellite Terminals<br />
+        SAT2210 Satellite Terminal<br />
+      </p>
+      <p>Modems<br />
+        SMB3310 Satellite Modem Board<br />
+        MDM9000 Satellite Modem for Intelligence Gathering applications, WGS and MilSatCom Networks<br />
+        MDM6100 Broadcast Satellite Modem<br />
+        MDM6000 Satellite Modem<br />
+        MDM5010 Satellite Modem<br />
+        MDM5000 Satellite Modem<br />
+        MDM3310 Satellite Modem<br />
+        MDM2510 IP Satellite Modem<br />
+        MDM2210 IP Satellite Modem<br />
+        MCX7000 Multi-Carrier Satellite Gateway<br />
+      </p>
+      <p>&nbsp;</p>
+      <p>Modulators<br />
+        M6100 Broadcast Satellite Modulator<br />
+      </p>
+      <p>Demodulators</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>NovelSat<br />
+        http://novelsat.com<br />
+        NovelSat NS3000 Professional High-Data Rate Satellite Modem<br />
+        NovelSat NS300X IP Satellite Modem <br />
+        NovelSat NS1000 Satellite Modulator<br />
+        NovelSat NS2000 Satellite Demodulator<br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>okokok<br />
+        ORBCOMM<br />
+        www.orbcomm.com<br />
+        OG2 and OGi Satellite Modems<br />
+  <br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><br />
+        Teledyne Paradise Datacom<br />
+        www.paradisedata.com<br />
+        Q-Flex modem </p>
+      <p> Q-NET QFlex-400 P2MP Remote Modem<br />
+        Q-NET QFlex-400 P2MP Remote Modem<br />
+        Q-NET Q-Flex P2MP Remote Modem<br />
+        Q-NET QFlex-400 P2MP Remote Modem<br />
+        Q-MultiFlex 'Hub-in-a-box' Modulator/Multi-Demod<br />
+        QMultiFlex-400 'Hub-in-a-box' Modulator/Multi-Demod<br />
+      </p>
+      <p>&nbsp; </p>
+      <p>&nbsp;</p>
+      <p><br />
+      </p>
+      <p>Paradiddle Communication<br />
+        www.paradiddle.us</p>
+      <p></p>
+      <p></p>
+      <p> </p>
+      <p> </p>
+      <p>Quake Global, Inc<br />
+        www.quakeglobal.com<br />
+        Q1000 ORBCOMM? satellite-based modem for M2M applications<br />
+        QLOCATE? Iridium? satellite-based modem for M2M applications</p>
+      <p>&nbsp;</p>
+      <p> <br />
+      </p>
+      <p>&nbsp;</p>
+      <p>Qualcomm-GlobalStar<br />
+        https://www.qualcomm.com<br />
+        http://www.globalstar.com/<br />
+        Snapdragon X55 5G modem-RF system <br />
+        Snapdragon X50 5G modem-RF system<br />
+        Snapdragon X24 LTE Modem<br />
+        Snapdragon X20 LTE Modem<br />
+        Snapdragon X16 LTE Modem<br />
+        Snapdragon X12 LTE Modem<br />
+        Snapdragon X5 LTE Modem<br />
+        Snapdragon 865 5G Mobile Platform</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>NSSLGlobal Technologies / STM/SatLink <br />
+        www.sat.link<br />
+        SatLink Hub Family<br />
+        SatLink 2000 VSAT <br />
+        SatLink 2910 VSAT <br />
+        SatLink 2910 Mobile VSAT<br />
+      </p>
+      <p></p>
+      <p></p>
+      <p> </p>
+      <p>SatExpander<br />
+        www.satexpander.com<br />
+        SatExpander SE300X Professional Satellite Modem<br />
+        SatX Satellite Modem<br />
+        SatX Modulator<br />
+        SatX Demodulator</p>
+      <p><br />
+      </p>
+      <p> <br />
+        SatixFy<br />
+        www.satixfy.com<br />
+        S-IDU DVB-S2X SDR Modem<br />
+        SCPC Wideband SDR Modem<br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>SCS - Spezielle Communications Systeme GmbH &amp; Co. KG<br />
+        www.scs-ptc.com<br />
+        HF modem P4dragon DR-7800<br />
+        HF modem P4dragon DR-7400</p>
+      <p></p>
+      <p> </p>
+      <p> </p>
+      <p>Signalchip<br />
+        www.signalchip.com</p>
+      <p></p>
+      <p></p>
+      <p> </p>
+      <p> </p>
+      <p>SkyBitz<br />
+        www.skybitz.com<br />
+        GLS9602 modem</p>
+      <p> </p>
+      <p> <br />
+      </p>
+      <p>skyDSL<br />
+        www.skydsl.eu<br />
+        skyDSL2+ Satellite Modem<br />
+        skyDSL2+ satellite router with WLAN</p>
+      <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p></p></td>
+    <td width="2%" valign="top">&nbsp;</td>
+    <td width="2%" valign="top">&nbsp;</td>
+    <td width="47%" valign="top"><h3>&nbsp;</h3>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p> </p>
+      <p>Skytech<br />
+        www.skytech-research.com | www.idscorporation.com</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>SpaceBridge<br />
+        www.spacebridge.com<br />
+        C7700 - ASAT? System Broadband Consumer / SMB Satellite Modem</p>
+      <p> </p>
+      <p> <br />
+      </p>
+      <p>Stratos<br />
+        www.stratosglobal.com</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p> </p>
+      <p>The PTR Group/Orbital<br />
+        www.theptrgroup.com</p>
+      <p> <br />
+      </p>
+      <p>TerraSat<br />
+        www.terrasatinc.com</p>
+      <p> </p>
+      <p>&nbsp;</p>
+      <p>Theia Holdings<br />
+        www.theiaspace.com</p>
+      <p>&nbsp;</p>
+      <p><br />
+        Thuraya<br />
+        www.thuraya.com<br />
+        satellite broadband terminal<br />
+        Thuraya IP <br />
+        FT2225 Thuraya M2M: Real-time, secure, two-way communications<br />
+        Thuraya Orion IP is a maritime-specific broadband terminal <br />
+        Thuraya Atlas IP maritime satellite terminal <br />
+        Thuraya Atlas IP+ maritime broadband terminal<br />
+        Thuraya MCD Voyager is a ‘Mobile Communications Device’<br />
+        Thuraya IP Voyager vehicular satellite terminal </p>
+      <p> </p>
+      <p> </p>
+      <p> <br />
+      </p>
+      <p> <br />
+        TXMission<br />
+        https://txmission.com<br />
+        Connect Ground Station Modem <br />
+        Quest™ Onboard Smallsat Modem</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><br />
+        ViaSat / Exede / WildBlue COMSAT Laboratories (A division of ViaSat, Inc.)<br />
+        www.viasat.com</p>
+      <p>Cellular Network Extension System<br />
+        Enterprise Broadband Terminals<br />
+        Fixed and Mobile M2M Terminals<br />
+        Fixed or Semi-Fixed High-Speed Satellite Internet Terminals<br />
+        Integrated cellular and satellite backhaul network<br />
+        IP Trunking Terminal<br />
+        IP Trunking Terminal Antenna Modem and Rack<br />
+        M2M + SCADA Terminals<br />
+        M2M and SCADA terminals<br />
+        MEO Satellite Ground Infrastructure<br />
+        Mobile Terminals<br />
+        Multi-Mission Terminal - Transportable, Multi-Band Satellite Communications<br />
+        Portable Government Broadband Terminals<br />
+        Residential Broadband Terminal<br />
+        Satellite Terminals for Mobile Applications<br />
+        UHF SATCOM Terminals - Shipboard + Fixed Station UHF Satellite Communications<br />
+      </p>
+      <p>Blue Force Tracking 2<br />
+        C4I SATCOM Networking-High-Speed Modems for Air, Land, and Sea</p>
+      <p>Commercial Broadband Modem 400<br />
+        Enhanced Bandwidth Efficient (Point-to-Point) SATCOM Modem<br />
+        Linkway S2 Mesh Modem<br />
+        LinkWayS2 Modem<br />
+        MD-1366 EBEM Modem<br />
+        Multi-Mission Satellite Modem<br />
+        Tactical Network-Centric (Full-Mesh and Hub/Spoke) SATCOM Modem</p>
+      <p> <br />
+        FEC (Forward Error Correction)</p>
+      <p>ASICs and IP Cores<br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> <br />
+        WORK Microwave<br />
+        www.work-microwave.de</p>
+      <p>AX-60/AX-61 IP Modem <br />
+        AX-80 Wideband Modem <br />
+        DaVid Modem <br />
+        DVB-S2 DaVid Modem SK-DV<br />
+        Transport Stream Modem <br />
+        DVB-S/S2 Transport Stream Modem SK-TS<br />
+        DVB-S2 IP Modem SK-IP</p>
+      <p>AT-60/AT-61 IP Modulator <br />
+        AT-80 Wideband Modulator <br />
+        Broadcast Modulator<br />
+        DVB Satellite Broadcast Modulator SDM2<br />
+        Satellite Modulator OEM Module</p>
+      <p>AR-60/AR-61 IP Demodulator <br />
+        AR-80 Wideband Demodulator<br />
+        DVB-S2 IP Demodulator<br />
+        DaVid Demodulator <br />
+        DVB-S2 DaVid Demodulator SDD-DV<br />
+        DVB-S/S2 Transport Stream Demodulator SDD-TS</p>
+      <h3>&nbsp;</h3>
+      <h3>&nbsp;</h3>
+      <h3><strong>Modem Suppliers for Other Applications <br />
+      </strong></h3>
+      <p>&nbsp;</p>
+      <ul>
+        <li><strong><em>Analog Devices&gt;&gt;&gt;Linear Analog Devices<br />
+          www.analog.com <br />
+          Linear <br />
+          www.linear.com </em></strong></li>
+        <li></li>
+        <li><strong><em>Apple<br />
+          www.apple.com</em></strong></li>
+        <li></li>
+        <li><strong><em><br />
+          Artec Design<br />
+          www.artecdesign.ee<br />
+          Microwave Modem IP</em></strong></li>
+        <li></li>
+        <li><strong><em>ASR Micro<br />
+          www.asrmicro.com<br />
+          China</em></strong></li>
+        <li></li>
+        <li><strong><em><br />
+          ATH system, s.r.o.<br />
+          www.athsystem.com</em></strong></li>
+        <li></li>
+        <li><strong><em>Cermetek MicroElectronics <br />
+          www.cermetek.com</em></strong></li>
+        <li></li>
+        <li><strong><em><br />
+          Circuit Design <br />
+          www.cdt21.com<br />
+        </em></strong></li>
+        <li></li>
+        <li><strong><em><br />
+          CML Microcircuits <br />
+          www.cmlmicro.com </em></strong></li>
+        <li></li>
+        <li></li>
+        <li><strong><em> ComBlock<br />
+          https://comblock.com</em></strong></li>
+        <li></li>
+        <li><strong><em><br />
+          Cybertec <br />
+          www.cybertec.com.au<br />
+        </em></strong></li>
+        <li></li>
+        <li><strong><em>Cypress <br />
+          www.cypress.com </em></strong></li>
+        <li></li>
+        <li><strong><em><br />
+          Delta Design <br />
+          www.deltamodem.be<br />
+        </em></strong></li>
+        <li></li>
+        <li></li>
+        <li><strong><em> Digi International<br />
+          www.digi.com </em></strong></li>
+        <li></li>
+        <li><strong><em><br />
+          IC Microsystem<br />
+          www.icmic.com</em></strong></li>
+        <li></li>
+        <li></li>
+        <li><strong><em> Iprium <br />
+          www.iprium.com </em></strong></li>
+        <li></li>
+        <li><strong><em><br />
+        </em></strong></li>
+        <li><strong><em>Klas Telecom <br />
+          http://klastelecom.com</em></strong></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <p>Maintech<br />
+        www.maintech.de <br />
+      </p>
+      <p>&nbsp;</p>
+      <p><br />
+        Maxim <br />
+        www.maximintegrated.com <br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> MIMOWAVES <br />
+        www.mimowaves.com</p>
+      <p>&nbsp;</p>
+      <p><br />
+        Multi-Tech Systems, Inc.<br />
+        www.multitech.com<br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> MVD Cores<br />
+        www.mvd-fpga.com</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> NimbeLink<br />
+        https://nimbelink.com</p>
+      <p>&nbsp;</p>
+      <p><br />
+        Radio Gigabit <br />
+        http://radiogigabit.com</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> RF DataTech<br />
+        www.rfdatatech.co.uk<br />
+      </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> Saankhya Labs <br />
+        www.saankhyalabs.com </p>
+      <p>&nbsp;</p>
+      <p><br />
+        piciorgros GmbH <br />
+        www.tetramodem.com </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> Ubee Interactive <br />
+        www.ubeeinteractive.com<br />
+      </p>
+      <p>&nbsp;</p>
+      <p><br />
+        US Robotics <br />
+        https://www.usr.com/</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> Wavecom GSM MODEM<br />
+        https://www.wavecom.com.au/<br />
+      </p>
+      <p>&nbsp;</p>
+      <p><br />
+        Weidmüller Interface GmbH &amp; Co. KG<br />
+        www.weidmuller.com</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <h3> <br />
+        Modem Vendors China</h3>
+      <p>&nbsp;</p>
+      <p>Shanghai Belling Co., Ltd</p>
+      <p>www.belling.com.cn</p>
+      <p>Power Line Communication Modem Chip</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>b-link</p>
+      <p>www.b-link.net.cn</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>Beijing CASC 北京中安卫通科技有限公司</p>
+      <p>http://www.chinacasc.com.cn</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>China Aerospace Group / Xian Zhongheng Communications</p>
+      <p>中国航天科技集团公司五院西安中恒星通信技术有限公司</p>
+      <p>多体制IP卫星通信调制解调器</p>
+      <p></p>
+      <p></p>
+      <p> </p>
+      <p>COMBA 京信通信系统控股有限公司</p>
+      <p>http://www.comba.com.cn</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>First Research Institute of Telecom Technologies 电信科学技术第一研究所有限公司</p>
+      <p>www.fritt.com.cn</p>
+      <p>SM-200L数字卫星调制解调器 Digital Satellite Modems</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>GreatFirst 深圳市统先科技股份有限公司</p>
+      <p>http://www.greatfirst.com</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>Guiderstar / Silk Road Satellite Communications Co., Ltd 丝路卫星通信有限公司</p>
+      <p>www.guiderstar.com</p>
+      <p> </p>
+      <p>Huawei</p>
+      <p> </p>
+      <p>China Communications Technology Ltd 华讯方舟科技有限公司</p>
+      <p>www.huaxunchina.cn</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>NekingTech 南京纽鼎科技有限公司</p>
+      <p>http://www.nekingtech.com</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>Hangzhou SDIC Microelectronics Co.,Ltd.</p>
+      <p>www.sdicmicro.cn</p>
+      <p>HART Modem IC</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>Shanghai Jiesheng Wireless 上海杰盛无线通讯设备有限公司</p>
+      <p>卫星产品-调制解调器</p>
+      <p> </p>
+      <p> </p>
+      <p>SpaceStar 南京天际易达通信技术有限公司</p>
+      <p>http://www.spaceestar.com</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p>YTBC Tech</p>
+      <p>http://ytbctech.com</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <p> </p>
+      <p>Zhong Starlight 中星光</p>
+      <p>船载卫星通信终端设备（包含天线和Modem）</p>
+      <p></p>
+      <p style="font-weight: bold"></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p></p>
+      <h2 align="center" style="color: #CC3300">&nbsp;</h2>
+      <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td colspan="4">&nbsp;</td>
+  </tr>
+  
+  <tr>
+    <td colspan="4"><p>&nbsp;</p>    </td>
+  </tr>
+</table>
+
+
+
+
+<iframe width="5" height="3" src="https://www.youtube.com/embed/dN1XUV6QclU?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+
+
+
+<!-- InstanceEndEditable --></td>
+    </tr>
+    
+</table>
+
+
+</body>
+<!-- InstanceEnd --></html>

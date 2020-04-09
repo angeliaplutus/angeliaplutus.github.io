@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+
+<TITLE>Satellite Broadband Internet Modem IP </TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+
+<!- English Meta //-->
+<meta name="abstract" content="fintech, payment, digital currency, cryptocurrency, security, antifraud, anti-hacking">
+<meta content="author" name="advancedpower@xmail.net">
+<meta name="keywords" content="fintech, payment, digital currency, cryptocurrency, security, antifraud, anti-hacking">
+<meta name="description" content="Plutus provides fintech solutions for the world">
+
+<link rel="stylesheet" href="../../yyy_scripts/myscript/myscript_en.css" type="text/css">
+  
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="../../zzzdropdownmenu/dropdown_styles/dropdown_script.js"></script>
+   <link rel="stylesheet" href="../../zzzdropdownmenu/dropdown_styles/dropdown_styles.css">
+</head>
+
+<BODY>
+<table width="100%" border="0" align="center">
+  <tr>
+    <td><div align="center">
+      <h1><a>Baseband Processing</a></h1>
+    </div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><p>The original digital stream (digital baseband) that you intend to transmit needs to be converted into a form suitable for transmission on a radio. That is ultimately a DSP processor that &quot;downconverts&quot; RF signals (high frequency) into baseband (low frequency) signals first using a Local oscillator and then estimates the distortion that channel (in most cases, air) has introduced and then tries to undo that distortion. The baseband processor encodes the original digital stream into a form suitable for transmission.  The digital stream must be manipulated into an analog constellation of amplitude, phases that represent the digital signal.  This signal is called the analog baseband. Everyone's baseband is largely the same.  To multiplex a bunch of basebands over radio frequencies, that baseband needs to be modulated and multiplexed into some kind of a channel,  either a frequency (frequency domain multiplexing), a timeslot (time domain multiplexing) or a sequence (code division multiplexing), or some combination of those things. So, the baseband processor does all the heavy lifting of signal conversion at the unmodulated frequencies (the baseband) before being fed into a modulator/multiplexer that will place the baseband signal on to a relevant transmission channel.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a></a>
+        <p>The Baseband  Processor performs all of the functions required for an IBS/IDR Framing Unit, a  Reed-Solomon Codec, and an E1/T1 Drop and Insert System. In addition, the  Baseband Processing Section provides for transmit clock selection and rate  adaptation as well as a rate adapter and Plesiochronous/Doppler (PD) Buffer in  the receive direction. A multiplexer is also provided for the SCT Clock Source  for Loop Timing Applications. The transmit and receive paths may be configured  independently under processor control.</p></td>
+  </tr>
+  <tr>
+    <td><div align="center"><img src="pics/BasebandProcessor2.png" width="1063" height="929"></div></td>
+  </tr>
+  <tr>
+    <td><p align="center">Universal Satellite Modem Functional Block Diagram</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><h2><a>Tx Baseband Processing</a></h2>
+        <p>The Tx Data and  Clock enters the Baseband Processor, passes through a Rate Adapting FIFO and  enters the Framer/Drop Processor. In Closed-Net Mode, the data passes through  the framer  unaltered. In IDR, IBS, and  D&amp;I Modes, the framer adds the appropriate framing and ESC as  defined in IESS-308 and 309. In D&amp;I Mode,  the framer acquires the terrestrial framing structure, E1 or T1, and  synchronizes the Drop Processor. The Drop Processor extracts the desired time slots  from the terrestrial data stream and feeds these channels back to the framer.  The framer then places the ‘dropped’ terrestrial time slots into the desired  satellite channel slots. The data is then sent to the Reed-Solomon Encoder.</p>
+      <p>The Reed-Solomon  Encoder, encodes the data into Reed-Solomon Blocks. The blocks are then interleaved  and synchronized to the frame pattern as defined by the selected specification  (IESS- 308, IESS-309, DVB, etc.). After Reed-Solomon Encoding, the composite  data and clock are applied to the BB Loopback Circuit.</p>
+      <p>&nbsp;</p>
+      <h2><a>Rx Baseband Processing</a> </h2>
+      <p>The Receive  Processor performs the inverse function of the Tx Processor. Data received from  the satellite passes through the BB Loopback Circuit to the Reed-Solomon  Decoder to the Deframer. The Deframer acquires the IBS/IDR/DVB frame,  synchronizes the Reed-Solomon Decoder and extracts the received data and  overhead from the frame structure, placing the data into the PD Buffer, sending  the overhead data to the UIM. In Closed-Net Mode, the data is extracted from  the buffer and is sent to the UIM. Backward Alarm indications are sent to the  M&amp;C Subsystem. In Drop and Insert Mode, the Insert Processor synchronizes  to the incoming terrestrial T1/E1 Data Stream, extracts satellite channels from  the PD Buffer, and then inserts them into the desired terrestrial time slots in  the T1/E1 Data Stream.</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td><p>&nbsp;</p></td>
+  </tr>
+</table>
+</BODY>
+</HTML>
